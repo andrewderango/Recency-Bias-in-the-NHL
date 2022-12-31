@@ -5,7 +5,7 @@ import numpy as np
 from recency_regression_func import perform_regression
 from fantasy_settings import current_season_id
 
-df = pd.read_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{current_season_id[:4]}-{current_season_id[6:]}_recency_bias.csv').drop(['Unnamed: 0'], axis=1)
+df = pd.read_csv(f'{current_season_id[:4]}-{current_season_id[6:]}_recency_bias.csv').drop(['Unnamed: 0'], axis=1)
 column_dict_rename = {}
 for column_header in df.columns[1:]:
     try:
