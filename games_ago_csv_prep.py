@@ -7,7 +7,7 @@ import pandas as pd
 from fantasy_settings import season_id
 import time
 
-df = pd.read_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{season_id[:4]}-{season_id[6:]}_fantasy_game_log.csv').drop(['Unnamed: 0'], axis=1)
+df = pd.read_csv(f'{season_id[:4]}-{season_id[6:]}_fantasy_game_log.csv').drop(['Unnamed: 0'], axis=1)
 column_dict_rename = {}
 for column_header in df.columns[1:]:
     try:
@@ -35,4 +35,4 @@ for game_iter in range(82, 10, -1):
     sub_csv_end_time = time.time()
 
 print(games_ago_df)
-games_ago_df.to_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{season_id[:4]}-{season_id[6:]}_recency_bias.csv')
+games_ago_df.to_csv(f'{season_id[:4]}-{season_id[6:]}_recency_bias.csv')
