@@ -12,7 +12,7 @@ from scipy.optimize import curve_fit
 from sklearn.metrics import r2_score
 
 def perform_regression():
-    games_ago_df = pd.read_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{season_id[:4]}-{season_id[6:]}_recency_bias.csv').drop(['Unnamed: 0'], axis=1)
+    games_ago_df = pd.read_csv(f'{season_id[:4]}-{season_id[6:]}_recency_bias.csv').drop(['Unnamed: 0'], axis=1)
     column_dict_rename = {}
     for column_header in games_ago_df.columns[1:]:
         try:
