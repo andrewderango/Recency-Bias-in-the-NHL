@@ -41,4 +41,4 @@ df['Last 20 Games Average'] = df['Last 20 Games Average'].apply(lambda float: f'
 df['Last 35 Games Average'] = df['Last 35 Games Average'].apply(lambda float: f'{float:.2f}')
 
 print(df)
-df.to_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{current_season_id[:4]}-{current_season_id[6:]}_recency_adj_projections.csv')
+df.to_csv(f'{current_season_id[:4]}-{current_season_id[6:]}_recency_adj_projections.csv')
