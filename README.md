@@ -1,4 +1,4 @@
-# Recency-Bias-in-the-NHL
+# Recency Bias in the NHL
 Quantifying adequate recency bias to predict how a player will perform in their next game using multiple and sigmoidal regression.
 
 The best order to execute the files is as follows:
