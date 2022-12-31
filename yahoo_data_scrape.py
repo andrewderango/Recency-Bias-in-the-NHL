@@ -45,7 +45,7 @@ def retrieve_csv(url):
 
 df = pd.DataFrame() #Initialization of dataframe
 players_wanted = 1000
-league_id = 3517
+league_id = XXXX #INSERT LEAGUE ID HERE
 
 for i in range(0,players_wanted,25):
     df = pd.concat([df, retrieve_csv(f'https://hockey.fantasysports.yahoo.com/hockey/{league_id}/players?status=ALL&pos=P&cut_type=33&stat1=S_S_2022&myteam=1&sort=PTS&sdir=1&count={i}')])
@@ -53,4 +53,4 @@ for i in range(0,players_wanted,25):
 
 df = df.reset_index(drop=True)
 df.index += 1
-df.to_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/yahoo_data_scrape.csv')
+df.to_csv(f'yahoo_data_scrape.csv')
