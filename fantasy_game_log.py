@@ -85,4 +85,4 @@ for player in skater_list:
 print()
 
 df = pd.DataFrame(df_rows)
-df.to_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{season_id[:4]}-{season_id[6:]}_fantasy_game_log.csv')
+df.to_csv(f'{season_id[:4]}-{season_id[6:]}_fantasy_game_log.csv')
