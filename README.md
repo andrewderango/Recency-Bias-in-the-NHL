@@ -1,5 +1,5 @@
 # Recency Bias in the NHL
-Quantifying adequate recency bias to predict how a player will perform in their next game using multiple and sigmoidal regression.
+Quantifying adequate recency bias to predict how a player will perform in their next game using multiple and sigmoidal regression. Data is scraped from the NHL API, which is available at https://statsapi.web.nhl.com/api/v1. 
 
 The best order to execute the files is as follows:
 1. fantasy_settings.py
