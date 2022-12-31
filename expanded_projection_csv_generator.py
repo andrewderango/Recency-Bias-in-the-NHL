@@ -1,4 +1,5 @@
 # Combines data from the Yahoo CSV and the projection CSV to return a CSV with a lot more information.
+# A sample output of this file is in this repository. See sample_output.csv
 
 import pandas as pd
 from fantasy_settings import current_season_id
