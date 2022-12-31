@@ -3,8 +3,8 @@
 import pandas as pd
 from fantasy_settings import current_season_id
 
-proj_df = pd.read_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/{current_season_id[:4]}-{current_season_id[6:]}_recency_adj_projections.csv')
-yahoo_df = pd.read_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/yahoo_data_scrape.csv')
+proj_df = pd.read_csv(f'{current_season_id[:4]}-{current_season_id[6:]}_recency_adj_projections.csv')
+yahoo_df = pd.read_csv(f'yahoo_data_scrape.csv')
 
 proj_df = proj_df.drop(['Unnamed: 0'], axis=1)
 yahoo_df = yahoo_df.drop(['Unnamed: 0'], axis=1)
@@ -31,4 +31,4 @@ proj_df = proj_df.sort_values(by=['Weighted Season Average'], ascending=False).r
 proj_df.index += 1
 
 print(proj_df)
-proj_df.to_csv(f'/Users/andrewderango/Documents/Programming Files/NHL API/Recency Bias/expanded_recency_adj_projections.csv')
+proj_df.to_csv(f'expanded_recency_adj_projections.csv')
