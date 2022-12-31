@@ -5,7 +5,7 @@ The best order to execute the files is as follows:
 1. fantasy_settings.py
 2. fantasy_game_log.py
 3. games_ago_csv_prep.py
-4. recency_regression.py
+4. recency_regression_func.py
 5. proj_csv_generator.py
 6. yahoo_data_scrape.py
 7. expanded_projection_csv_generator.py
